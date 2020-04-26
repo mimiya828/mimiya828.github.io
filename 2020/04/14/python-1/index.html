@@ -20,17 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="#python学习 ##python2与python3区别python2：源码不规范，重复python3：源码清晰，优美简单">
+  <meta name="description" content="#python学习（第一章） ##python2与python3区别python2：源码不规范，重复python3：源码清晰，优美简单##python的第三放库的安装和模块导入###使用pip安装和管理Python第三方库  Python 3.4以后的版本包含pip和setuptools库  pip用于安装和管理Python第三方库  setuptools用于发布Python库pip的典型应用是从">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python">
 <meta property="og:url" content="http://yoursite.com/2020/04/14/python-1/index.html">
 <meta property="og:site_name" content="毛小毛の博客">
-<meta property="og:description" content="#python学习 ##python2与python3区别python2：源码不规范，重复python3：源码清晰，优美简单">
+<meta property="og:description" content="#python学习（第一章） ##python2与python3区别python2：源码不规范，重复python3：源码清晰，优美简单##python的第三放库的安装和模块导入###使用pip安装和管理Python第三方库  Python 3.4以后的版本包含pip和setuptools库  pip用于安装和管理Python第三方库  setuptools用于发布Python库pip的典型应用是从">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/04/images/6.jpg">
 <meta property="article:published_time" content="2020-04-13T16:21:01.000Z">
-<meta property="article:modified_time" content="2020-04-13T16:22:00.763Z">
+<meta property="article:modified_time" content="2020-04-26T15:30:12.711Z">
 <meta property="article:author" content="mimiya828">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/images/6.jpg">
 
 <link rel="canonical" href="http://yoursite.com/2020/04/14/python-1/">
 
@@ -188,10 +190,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-04-14 00:21:01 / 修改时间：00:22:00" itemprop="dateCreated datePublished" datetime="2020-04-14T00:21:01+08:00">2020-04-14</time>
+              <time title="创建时间：2020-04-14 00:21:01" itemprop="dateCreated datePublished" datetime="2020-04-14T00:21:01+08:00">2020-04-14</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-04-26 23:30:12" itemprop="dateModified" datetime="2020-04-26T23:30:12+08:00">2020-04-26</time>
+              </span>
 
           
             <span id="/2020/04/14/python-1/" class="post-meta-item leancloud_visitors" data-flag-title="python" title="热度">
@@ -221,14 +229,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>61</span>
+              <span>1.7k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -240,8 +248,40 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>#python学习</p>
-<p>##python2与python3区别<br>python2：源码不规范，重复<br>python3：源码清晰，优美简单</p>
+        <p>#python学习（第一章）</p>
+<p>##python2与python3区别<br>python2：源码不规范，重复<br>python3：源码清晰，优美简单<br>##python的第三放库的安装和模块导入<br>###使用pip安装和管理Python第三方库</p>
+<ul>
+<li><p>Python 3.4以后的版本包含pip和setuptools库<br>  pip用于安装和管理Python第三方库<br>  setuptools用于发布Python库<br>pip的典型应用是从PyPI（Python Package Index）上安装Python第三方库</p>
+</li>
+<li><p>pip在线安装：在Windows系统命令提示符环境中进行  </p>
+</li>
+<li><p>pip离线安装：需要到<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/去下载第三方库的whl轮子文件" target="_blank" rel="noopener">https://www.lfd.uci.edu/~gohlke/pythonlibs/去下载第三方库的whl轮子文件</a>  </p>
+</li>
+<li><p>exe安装，不是每个扩展库都支持  </p>
+</li>
+<li><p>如果机器上安装了多个Python开发环境，那么在一个环境下安装的扩展库无法在另一个环境下使用，需要分别安装。  </p>
+</li>
+<li><p><img src="../../images/6.jpg" alt="Alt text">  </p>
+</li>
+<li><p>更新pip和setuptools包<br>在Windows命令提示符窗口中，输入命令行命令“pip install –upgrade pip setuptools”，更新pip和setuptools包  </p>
+</li>
+<li><p>安装NumPy包<br>在Windows命令提示符窗口中，输入命令行命令“pip install NumPy”，安装NumPy包</p>
+</li>
+</ul>
+<p>NumPy是Python数据处理的底层库，是高性能科学计算和数据分析的基础，许多其他科学计算库都基于Numpy。除此之外，它包括：<br> 功能强大的N维数组对象。<br> 精密广播功能函数。<br> 集成 C/C++和Fortran 代码的工具。<br> 强大的线性代数、傅立叶变换和随机数功能。  </p>
+<ul>
+<li>安装Matplotlib包  </li>
+<li>在Windows命令提示符窗口中，输入命令行命令“pip install Matplotlib”，安装Matplotlib包  </li>
+</ul>
+<p>Matplotlib是Python最流行的绘图程序库，能够替代Matlab中的大部分功能。Seaborn和Prettyplotlib是在Matplotlib的基础上改进功能的绘图程序库。  </p>
+<ul>
+<li>安装Requests包  </li>
+<li>在Windows命令提示符窗口中，输入命令行命令“pip install requests”，安装Requests包</li>
+</ul>
+<p>Requests是Python的一个很实用的HTTP客户端库，完全满足如今网络爬虫的需求。<br>###标准库与第三方库对象的导入与使用<br><strong>*  import 模块名 [as 别名] *</strong> (这种方法一次可以导入多个模块。但在使用模块中的类、方法、函数、变量等内容时，需要在它们前面加上模块名。)</p>
+<p>–<br>import math                    #导入标准库math<br> math.sin(0.5)                    #求0.5（单位是弧度）的正弦<br>0.479425538604203<br>import numpy as np             #导入扩展库numpy，并设置别名为np<br>a = np.array((1,2,3,4))        #通过模块的别名来访问其中的对象<br>a<br>array([1, 2, 3, 4])<br> print(a)<br>[1 2 3 4]   </p>
+<p><strong>*from 模块名 import * *</strong>(这种方法一次导入一个模块中的所有内容。使用时不需要添加模块名为前缀，但程序的可读性较差。)<br>from math import *         #导入标准库math中所有对象<br> sin(3)                     #求正弦值<br>0.1411200080598672<br> gcd(36, 18)                #最大公约数<br>18<br> pi                         #常数π<br>3.141592653589793<br> e                          #常数e<br>2.718281828459045<br> log2(8)                    #计算以2为底的对数值<br>3.0<br> log10(100)                 #计算以10为底的对数值<br>2.0<br> radians(180)               #把角度转换为弧度<br>3.141592653589793<br><strong><em>from 模块名 import 对象名[ as 别名]</em></strong>(这种方法一次导入一个模块中指定的内容，如某个函数。调用时不需要添加模块名为前缀。使用这种方法的程序可读性介于前两者。)</p>
+<p>from math import sin  #只导入模块中的指定对象，访问速度略快<br>sin(3)<br>0.1411200080598672<br> from math import sin as f    #给导入的对象起个别名<br> f(3)<br>0.1411200080598672<br> from os.path import isfile<br> isfile(r’C:\windows\notepad.exe’)<br>True  </p>
 
     </div>
 
@@ -266,8 +306,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/04/14/python/" rel="prev" title="python">
-      <i class="fa fa-chevron-left"></i> python
+    <a href="/2020/03/29/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
     </a></div>
       <div class="post-nav-item"></div>
     </div>
@@ -345,7 +385,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -396,12 +436,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">0k</span>
+    <span title="站点总字数">2k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1 分钟</span>
+    <span title="站点阅读时长">2 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>

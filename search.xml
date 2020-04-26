@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>python</title>
+    <url>/2020/04/14/python-1/</url>
+    <content><![CDATA[<p>#python学习（第一章）</p>
+<p>##python2与python3区别<br>python2：源码不规范，重复<br>python3：源码清晰，优美简单<br>##python的第三放库的安装和模块导入<br>###使用pip安装和管理Python第三方库</p>
+<ul>
+<li><p>Python 3.4以后的版本包含pip和setuptools库<br>  pip用于安装和管理Python第三方库<br>  setuptools用于发布Python库<br>pip的典型应用是从PyPI（Python Package Index）上安装Python第三方库</p>
+</li>
+<li><p>pip在线安装：在Windows系统命令提示符环境中进行  </p>
+</li>
+<li><p>pip离线安装：需要到<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/去下载第三方库的whl轮子文件" target="_blank" rel="noopener">https://www.lfd.uci.edu/~gohlke/pythonlibs/去下载第三方库的whl轮子文件</a>  </p>
+</li>
+<li><p>exe安装，不是每个扩展库都支持  </p>
+</li>
+<li><p>如果机器上安装了多个Python开发环境，那么在一个环境下安装的扩展库无法在另一个环境下使用，需要分别安装。  </p>
+</li>
+<li><p><img src="../../images/6.jpg" alt="Alt text">  </p>
+</li>
+<li><p>更新pip和setuptools包<br>在Windows命令提示符窗口中，输入命令行命令“pip install –upgrade pip setuptools”，更新pip和setuptools包  </p>
+</li>
+<li><p>安装NumPy包<br>在Windows命令提示符窗口中，输入命令行命令“pip install NumPy”，安装NumPy包</p>
+</li>
+</ul>
+<p>NumPy是Python数据处理的底层库，是高性能科学计算和数据分析的基础，许多其他科学计算库都基于Numpy。除此之外，它包括：<br> 功能强大的N维数组对象。<br> 精密广播功能函数。<br> 集成 C/C++和Fortran 代码的工具。<br> 强大的线性代数、傅立叶变换和随机数功能。  </p>
+<ul>
+<li>安装Matplotlib包  </li>
+<li>在Windows命令提示符窗口中，输入命令行命令“pip install Matplotlib”，安装Matplotlib包  </li>
+</ul>
+<p>Matplotlib是Python最流行的绘图程序库，能够替代Matlab中的大部分功能。Seaborn和Prettyplotlib是在Matplotlib的基础上改进功能的绘图程序库。  </p>
+<ul>
+<li>安装Requests包  </li>
+<li>在Windows命令提示符窗口中，输入命令行命令“pip install requests”，安装Requests包</li>
+</ul>
+<p>Requests是Python的一个很实用的HTTP客户端库，完全满足如今网络爬虫的需求。<br>###标准库与第三方库对象的导入与使用<br><strong>*  import 模块名 [as 别名] *</strong> (这种方法一次可以导入多个模块。但在使用模块中的类、方法、函数、变量等内容时，需要在它们前面加上模块名。)</p>
+<p>–<br>import math                    #导入标准库math<br> math.sin(0.5)                    #求0.5（单位是弧度）的正弦<br>0.479425538604203<br>import numpy as np             #导入扩展库numpy，并设置别名为np<br>a = np.array((1,2,3,4))        #通过模块的别名来访问其中的对象<br>a<br>array([1, 2, 3, 4])<br> print(a)<br>[1 2 3 4]   </p>
+<p><strong>*from 模块名 import * *</strong>(这种方法一次导入一个模块中的所有内容。使用时不需要添加模块名为前缀，但程序的可读性较差。)<br>from math import *         #导入标准库math中所有对象<br> sin(3)                     #求正弦值<br>0.1411200080598672<br> gcd(36, 18)                #最大公约数<br>18<br> pi                         #常数π<br>3.141592653589793<br> e                          #常数e<br>2.718281828459045<br> log2(8)                    #计算以2为底的对数值<br>3.0<br> log10(100)                 #计算以10为底的对数值<br>2.0<br> radians(180)               #把角度转换为弧度<br>3.141592653589793<br><strong><em>from 模块名 import 对象名[ as 别名]</em></strong>(这种方法一次导入一个模块中指定的内容，如某个函数。调用时不需要添加模块名为前缀。使用这种方法的程序可读性介于前两者。)</p>
+<p>from math import sin  #只导入模块中的指定对象，访问速度略快<br>sin(3)<br>0.1411200080598672<br> from math import sin as f    #给导入的对象起个别名<br> f(3)<br>0.1411200080598672<br> from os.path import isfile<br> isfile(r’C:\windows\notepad.exe’)<br>True  </p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2020/03/29/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
@@ -16,21 +55,6 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>python</title>
-    <url>/2020/04/14/python-1/</url>
-    <content><![CDATA[<p>#python学习</p>
-<p>##python2与python3区别<br>python2：源码不规范，重复<br>python3：源码清晰，优美简单</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>python</title>
-    <url>/2020/04/14/python/</url>
-    <content><![CDATA[<hr>
-<p>#python学习</p>
-<p>##python2与python3区别<br>python2：源码不规范，重复<br>python3：源码清晰，优美简单</p>
 ]]></content>
   </entry>
 </search>
