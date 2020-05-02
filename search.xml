@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>python2</title>
+    <url>/2020/05/02/python2-1/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<h3 id="打印九九乘法表"><a href="#打印九九乘法表" class="headerlink" title="打印九九乘法表"></a>打印九九乘法表</h3><p><img src="https://upload-images.jianshu.io/upload_images/11884586-e1e666b1fd6dd058.png" alt=""></p>
+<p>代码为：</p>
+<p><img src="D:%5Cmyblog%5Cblog%5Csource%5Cimg%5C1.JPG" alt="1"></p>
+<p>结果为：</p>
+<p><img src="D:%5Cmyblog%5Cblog%5Csource%5Cimg%5C2.JPG" alt="2"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>python</title>
     <url>/2020/04/14/python-1/</url>
     <content><![CDATA[<p>#python学习（第一章）</p>
