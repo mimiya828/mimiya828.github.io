@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>python2</title>
-    <url>/2020/05/02/python2/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>python</title>
     <url>/2020/04/14/python-1/</url>
     <content><![CDATA[<p>#python学习（第一章）</p>
@@ -41,7 +36,12 @@
 <p>Requests是Python的一个很实用的HTTP客户端库，完全满足如今网络爬虫的需求。<br>###标准库与第三方库对象的导入与使用<br><strong>*  import 模块名 [as 别名] *</strong> (这种方法一次可以导入多个模块。但在使用模块中的类、方法、函数、变量等内容时，需要在它们前面加上模块名。)</p>
 <p>–<br>import math                    #导入标准库math<br> math.sin(0.5)                    #求0.5（单位是弧度）的正弦<br>0.479425538604203<br>import numpy as np             #导入扩展库numpy，并设置别名为np<br>a = np.array((1,2,3,4))        #通过模块的别名来访问其中的对象<br>a<br>array([1, 2, 3, 4])<br> print(a)<br>[1 2 3 4]   </p>
 <p><strong>*from 模块名 import * *</strong>(这种方法一次导入一个模块中的所有内容。使用时不需要添加模块名为前缀，但程序的可读性较差。)<br>from math import *         #导入标准库math中所有对象<br> sin(3)                     #求正弦值<br>0.1411200080598672<br> gcd(36, 18)                #最大公约数<br>18<br> pi                         #常数π<br>3.141592653589793<br> e                          #常数e<br>2.718281828459045<br> log2(8)                    #计算以2为底的对数值<br>3.0<br> log10(100)                 #计算以10为底的对数值<br>2.0<br> radians(180)               #把角度转换为弧度<br>3.141592653589793<br><strong><em>from 模块名 import 对象名[ as 别名]</em></strong>(这种方法一次导入一个模块中指定的内容，如某个函数。调用时不需要添加模块名为前缀。使用这种方法的程序可读性介于前两者。)</p>
-<p>from math import sin  #只导入模块中的指定对象，访问速度略快<br>sin(3)<br>0.1411200080598672<br> from math import sin as f    #给导入的对象起个别名<br> f(3)<br>0.1411200080598672<br> from os.path import isfile<br> isfile(r’C:\windows\notepad.exe’)<br>True  </p>
+<p>from math import sin  #只导入模块中的指定对象，访问速度略快<br>sin(3)<br>0.1411200080598672<br> from math import sin as f    #给导入的对象起个别名<br> f(3)<br>0.1411200080598672<br> from os.path import isfile<br> isfile(r’C:\windows\notepad.exe’)<br>True<br>#九九乘法表</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>java</title>
+    <url>/2020/05/02/java/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
